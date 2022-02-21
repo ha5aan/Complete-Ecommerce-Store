@@ -57,7 +57,7 @@ const handleEmptyCart = async ()=>{
         <Route exact path="/" element={<Products products={products} onAddToCart={handleAddToCart} />}/>
           
         <Route exact path="/cart"  element={<Cart cart={cart} handleUpdateCartQty={handleUpdateCartQty} handleEmptyCart={handleEmptyCart} handleRemoveFromCart={handleRemoveFromCart} />}/>
-        <Route exact path="/checkout" element={<Checkout/>} />
+        <Route exact path="/checkout" element={<Checkout  cart = {cart}/>} />
       </Routes>
 
       </BrowserRouter>
